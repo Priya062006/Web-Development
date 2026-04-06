@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Hackathon Registration - DY Patil</title>
+
+<style>
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #8A2BE2, #9400D3); /* Violet Background */
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 400px;
+    margin: 50px auto;
+    background: white;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.2);
+}
+
+h2 {
+    text-align: center;
+    color: #6A0DAD;
+}
+
+input, select, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 8px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    background: #8A2BE2; /* Violet Button */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #6A0DAD;
+}
+
+.success {
+    display: none;
+    text-align: center;
+}
+
+.success h2 {
+    color: green;
+}
+
+.success button {
+    margin-top: 20px;
+}
+</style>
+</head>
+
+<body>
+
+<div class="container" id="formPage">
+    <h2>Hackathon Registration</h2>
+    <p style="text-align:center;">DY Patil Kasba Bawada, Kolhapur</p>
+
+    <form onsubmit="showSuccess(event)">
+        <label>Full Name</label>
+        <input type="text" required>
+
+        <label>Email</label>
+        <input type="email" required>
+
+        <label>Phone Number</label>
+        <input type="tel" required>
+
+        <label>College Name</label>
+        <input type="text" required>
+
+        <label>Department</label>
+        <input type="text" required>
+
+        <label>Year</label>
+        <select required>
+            <option value="">Select Year</option>
+            <option>First Year</option>
+            <option>Second Year</option>
+            <option>Third Year</option>
+            <option>Final Year</option>
+        </select>
+
+        <label>Team Name</label>
+        <input type="text">
+
+        <label>Project Idea</label>
+        <textarea rows="3"></textarea>
+
+        <button type="submit">Register</button>
+    </form>
+</div>
+
+<div class="container success" id="successPage">
+    <h2>✅ Registration Successfully Done!</h2>
+    <p>Thank you for registering for the Hackathon.</p>
+
+    <button onclick="submitAnother()">Submit Another Response</button>
+</div>
+
+<script>
+function showSuccess(event) {
+    event.preventDefault();
+    document.getElementById("formPage").style.display = "none";
+    document.getElementById("successPage").style.display = "block";
+}
+
+function submitAnother() {
+    document.getElementById("formPage").style.display = "block";
+    document.getElementById("successPage").style.display = "none";
+    document.querySelector("form").reset();
+}
+</script>
+
+</body>
+</html>
