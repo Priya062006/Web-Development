@@ -1,0 +1,22 @@
+<?xml version = "1.0"?> 
+<?xml-stylesheet type = "text/xsl" href = "Practical13.xsl"?> 
+<class> 
+   <student rollno = "393"> 
+      <firstname>Priya</firstname> 
+      <lastname>Avate</lastname> 
+      <nickname>Piyu</nickname> 
+      <marks>99</marks> 
+   </student> 
+   <student rollno = "493"> 
+      <firstname>diya</firstname> 
+      <lastname>khamkar</lastname> 
+      <nickname>diyu</nickname> 
+      <marks>95</marks> 
+   </student> 
+   <student rollno = "593"> 
+      <firstname>snehal</firstname> 
+      <lastname>khot</lastname> 
+      <nickname>snehee</nickname> 
+      <marks>90</marks> 
+   </student> 
+</class>

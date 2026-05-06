@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Resume - Priya Avate</title>
+<style>
+body{
+    margin:0;
+    font-family:Arial, sans-serif;
+}
+.container{
+    display:flex;
+    min-height:100vh;
+}
+.left{
+    width:30%;
+    background:#d6b1a2;
+    padding:30px;
+    text-align:center;
+}
+.left img{
+    width:150px;
+    height:150px;
+    border-radius:50%;
+    border:6px solid white;
+    object-fit:cover;
+}
+.left h3{
+    text-align:left;
+    letter-spacing:2px;
+    margin-top:20px;
+}
+.left p{
+    text-align:left;
+    font-size:14px;
+    line-height:1.5;
+}
+.contact{
+    text-align:left;
+}
+.right{
+    width:70%;
+    background:#f2f2f2;
+}
+.header{
+    background:#2c2c2c;
+    color:white;
+    padding:40px;
+}
+.header h1{
+    margin:0;
+    letter-spacing:3px;
+}
+.content{
+    padding:30px;
+}
+.section{
+    margin-bottom:25px;
+}
+.section h3{
+    border-left:5px solid teal;
+    padding-left:10px;
+    letter-spacing:1px;
+}
+ul{
+    padding-left:20px;
+}
+input{
+    margin-top:10px;
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+<!-- LEFT SIDE -->
+<div class="left">
+
+<img id="photo" src="Images/profile.jpg">
+<input type="file" accept="image/*" onchange="loadImage(event)">
+
+<h3>PROFILE</h3>
+<p>
+Currently pursuing my B.Tech Degree in DYP College of Engineering,
+Kasba Bawada, Kolhapur. <br>
+I consider myself a responsible and orderly person. <br>
+I am looking forward for my first work experience.
+</p>
+
+<div class="contact">
+<h3>CONTACT ME</h3>
+<p>📞 9876543210</p>
+<p>✉️ priyaavate@gmail.com</p>
+<p>📍 13th Lane Swami App Opposite Datta Mandir, Jaysingpur.</p>
+</div>
+
+</div>
+
+<!-- RIGHT SIDE -->
+<div class="right">
+
+<div class="header">
+<h1>PRIYA AVATE</h1>
+<p>Student</p>
+</div>
+
+<div class="content">
+
+<div class="section">
+<h3>EDUCATION</h3>
+<p><b>CHATE COLLEGE</b></p>
+<p>Completed my HSC from Chate College, Jaysingpur.</p>
+<p><b>CHATE COLLEGE</b></p>
+<p>2020-2024</p>
+</div>
+
+<div class="section">
+<h3>LANGUAGE</h3>
+<ul>
+<li>Mother tongue Marathi</li>
+<li>Advanced Hindi</li>
+</ul>
+</div>
+
+<div class="section">
+<h3>COMPUTER SKILLS</h3>
+<ul>
+<li>C Language</li>
+<li>Python</li>
+<li>Slide presentation</li>
+</ul>
+</div>
+
+<div class="section">
+<h3>SKILLS</h3>
+<ul>
+<li>Relationship Building</li>
+<li>Problem Solution</li>
+<li>Multitasking Abilities</li>
+<li>Leadership Quality</li>
+</ul>
+</div>
+
+</div>
+</div>
+
+</div>
+
+<script>
+function loadImage(event){
+document.getElementById('photo').src = URL.createObjectURL(event.target.files[0]);
+}
+</script>
+
+</body>
+</html>

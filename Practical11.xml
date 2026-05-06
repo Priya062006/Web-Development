@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/css" href="library.css"?>
+<library>
+    <book>
+        <id>001</id>
+        <title>XML Basics Guide</title>
+        <author>Michael Carter</author>
+        <published_year>2019</published_year>
+        <available_copies>4</available_copies>
+    </book>
+    <book>
+        <id>002</id>
+        <title>Advanced XSLT Techniques</title>
+        <author>Emily Johnson</author>
+        <published_year>2021</published_year>
+        <available_copies>6</available_copies>
+    </book>
+</library>
+
